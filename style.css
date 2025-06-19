@@ -789,6 +789,9 @@ body {
         display: block;
     }
     .home{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background: var(--bg-color);
     }
     .navbar {
