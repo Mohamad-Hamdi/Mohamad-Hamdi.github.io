@@ -920,6 +920,9 @@ body {
     .home-content p {
         font-size: 2rem;
     }
+        .home-content .btn-box {
+        margin-top: -10px;
+    }
     .education {
         padding: 10rem 4% 5rem 5%;
     }
