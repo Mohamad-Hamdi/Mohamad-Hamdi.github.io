@@ -789,16 +789,9 @@ body {
         display: block;
     }
     .home{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         background: var(--bg-color);
     }
-    .home-content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+
     .navbar {
         position: absolute;
         top: 100%;
@@ -849,11 +842,6 @@ body {
         transform: translateX(0);
         transition-delay: 0.25s;
     }
-    .education {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    } 
     .timeline-items {
         padding-right: 20px;
     }
@@ -861,9 +849,6 @@ body {
     .timeline-items::before {
         left: unset;
         right: -73px; 
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     .timeline-item {
