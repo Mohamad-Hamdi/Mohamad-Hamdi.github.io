@@ -793,9 +793,6 @@ body {
     .home-content{
         text-align: right;
     }
-    .home-content .btn-box {
-        margin-top: -15px;
-    }
     .home-content p{
         text-align: justify;
     }
@@ -902,7 +899,7 @@ body {
         flex-direction: column;
     }
     .home-content .btn-box {
-        margin-top: -15px;
+        margin-top: -18px;
     }
     .home-sci {
         width: 160px;
@@ -924,7 +921,7 @@ body {
         font-size: 2rem;
     }
    .home-content .btn-box {
-        margin-top: -15px;
+        margin-top: -18px;
     }
     .education {
         padding: 10rem 4% 5rem 5%;
