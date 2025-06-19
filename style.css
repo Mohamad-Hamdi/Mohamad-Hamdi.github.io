@@ -792,10 +792,10 @@ body {
     }
     .home-content{
         text-align: right;
-
-
     }
-
+    .home-content .btn-box {
+        margin-top: -10px;
+    }
     .home-content p{
         text-align: justify;
     }
@@ -901,6 +901,9 @@ body {
         display: flex;
         flex-direction: column;
     }
+    .home-content .btn-box {
+        margin-top: -10px;
+    }
     .home-sci {
         width: 160px;
     }
@@ -920,7 +923,7 @@ body {
     .home-content p {
         font-size: 2rem;
     }
-        .home-content .btn-box {
+   .home-content .btn-box {
         margin-top: -10px;
     }
     .education {
