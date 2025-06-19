@@ -794,6 +794,11 @@ body {
         align-items: center;
         background: var(--bg-color);
     }
+    .home-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .navbar {
         position: absolute;
         top: 100%;
@@ -856,6 +861,9 @@ body {
     .timeline-items::before {
         left: unset;
         right: -73px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .timeline-item {
