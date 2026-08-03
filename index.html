@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mohamed Hamdy — Front-End Developer & AI Engineering Student. Building user-centric web applications with modern JavaScript ecosystems.">
+    <meta property="og:title" content="Mohamed Hamdy — Portfolio">
+    <meta property="og:description" content="Front-End Developer & AI Engineering Student">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mohamad-hamdi.github.io">
+    <title>Mohamed Hamdy | Portfolio</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===== Animated Background Orbs ===== -->
+    <div class="bg-orbs" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="orb orb-4"></div>
+        <div class="orb orb-5"></div>
+    </div>
+
+    <!-- ===== Scroll Progress Bar ===== -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- ===== Header / Navbar ===== -->
+    <header class="header glass" id="header">
+        <a href="#home" class="logo" id="logo-link">
+            <span class="logo-text">MH</span>
+            <span class="logo-dot">.</span>
+        </a>
+
+        <nav class="navbar" id="navbar">
+            <!-- Nav links rendered by JS -->
+        </nav>
+
+        <div class="header-actions">
+            <!-- Language Toggle -->
+            <button class="glass-btn toggle-btn" id="lang-toggle" title="Switch Language" aria-label="Switch Language">
+                <span id="lang-label">EN</span>
+            </button>
+
+            <!-- Theme Toggle -->
+            <button class="glass-btn toggle-btn" id="theme-toggle" title="Toggle Theme" aria-label="Toggle Theme">
+                <i class="bx bx-moon" id="theme-icon"></i>
+            </button>
+
+            <!-- Mobile Menu -->
+            <button class="glass-btn menu-btn" id="menu-toggle" aria-label="Toggle Menu">
+                <i class="bx bx-menu" id="menu-icon"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- ===== Hero Section ===== -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+
+            <h1 class="hero-title reveal-up" data-delay="1">
+                <span id="hero-greeting">مرحبًا، أنا</span>
+                <span class="hero-name gradient-text" id="hero-name">محمد حمدي</span>
+            </h1>
+
+            <div class="hero-typing reveal-up" data-delay="2">
+                <span class="typing-prefix" id="typing-prefix">أنا</span>
+                <span class="typing-text" id="typing-text"></span>
+                <span class="typing-cursor">|</span>
+            </div>
+
+            <p class="hero-desc reveal-up" data-delay="3" id="hero-desc"></p>
+
+            <div class="hero-buttons reveal-up" data-delay="4">
+                <a href="#contact" class="btn btn-primary" id="hero-cta-contact">
+                    <i class="bx bx-envelope"></i>
+                    <span>دعنا نتواصل!</span>
+                </a>
+                <a href="" class="btn btn-glass" id="hero-cta-cv" download>
+                    <i class="bx bx-download"></i>
+                    <span>تحميل السيرة الذاتية</span>
+                </a>
+            </div>
+
+            <div class="hero-social reveal-up" data-delay="5" id="hero-social">
+                <!-- Rendered by JS -->
+            </div>
+        </div>
+
+        <div class="hero-visual reveal-up" data-delay="2">
+            <div class="hero-image-wrapper glass-card">
+                <img src="assets/images/home.png" alt="Mohamed Hamdy" class="hero-image" id="hero-image">
+                <div class="hero-image-glow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== About Section ===== -->
+    <section class="section about" id="about">
+        <h2 class="section-title reveal-up" id="about-title">نبذة <span>عنّي</span></h2>
+
+        <div class="about-grid">
+            <div class="about-image-col reveal-left">
+                <div class="about-image-wrapper glass-card">
+                    <img src="assets/images/about.png" alt="Mohamed Hamdy" class="about-image" id="about-image">
+                </div>
+            </div>
+
+            <div class="about-content-col">
+                <p class="about-text reveal-right" id="about-text"></p>
+
+                <div class="stats-grid" id="stats-grid">
+                    <!-- Rendered by JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Education Section ===== -->
+    <section class="section education" id="education">
+        <h2 class="section-title reveal-up" id="education-title">التعليم <span>الأكاديمي</span></h2>
+
+        <div class="timeline" id="education-timeline">
+            <div class="timeline-progress"></div>
+            <!-- Rendered by JS -->
+        </div>
+    </section>
+
+    <!-- ===== Experience Section ===== -->
+    <section class="section experience" id="experience">
+        <h2 class="section-title reveal-up" id="experience-title">الخبرات <span>المهنية</span></h2>
+
+        <div class="timeline" id="experience-timeline">
+            <div class="timeline-progress"></div>
+            <!-- Rendered by JS -->
+        </div>
+    </section>
+
+    <!-- ===== Skills Section ===== -->
+    <section class="section skills" id="skills">
+        <h2 class="section-title reveal-up" id="skills-title">المهارات <span>التقنية</span></h2>
+
+        <div class="skills-container" id="skills-container">
+            <!-- Rendered by JS -->
+        </div>
+    </section>
+
+    <!-- ===== Projects Section ===== -->
+    <section class="section projects" id="projects">
+        <h2 class="section-title reveal-up" id="projects-title">المشاريع <span>الخاصة بي</span></h2>
+
+        <div class="projects-grid" id="projects-grid">
+            <!-- Rendered by JS -->
+        </div>
+    </section>
+
+    <!-- ===== Project Detail Modal ===== -->
+    <div class="modal-overlay" id="project-modal">
+        <div class="modal glass-card">
+            <button class="modal-close" id="modal-close" aria-label="Close">
+                <i class="bx bx-x"></i>
+            </button>
+            <div class="modal-body" id="modal-body">
+                <!-- Filled by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== Contact Section ===== -->
+    <section class="section contact" id="contact">
+        <h2 class="section-title reveal-up" id="contact-title">تواصل <span>معي</span></h2>
+
+        <div class="contact-grid">
+            <div class="contact-info reveal-left">
+                <div class="contact-card glass-card" id="contact-email-card">
+                    <i class="bx bx-envelope"></i>
+                    <h3 id="contact-email-label">البريد الإلكتروني</h3>
+                    <a href="" id="contact-email-link"></a>
+                </div>
+                <div class="contact-card glass-card" id="contact-phone-card">
+                    <i class="bx bx-phone"></i>
+                    <h3 id="contact-phone-label">الهاتف</h3>
+                    <a href="" id="contact-phone-link"></a>
+                </div>
+            </div>
+
+            <form action="https://formsubmit.co/mohamdahmedhamdi@gmail.com" method="POST" class="contact-form glass-card reveal-right" id="contact-form">
+                <input type="hidden" name="_captcha" value="false">
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <input type="text" name="name" id="form-name" required autocomplete="name">
+                        <label for="form-name" id="form-name-label">الاسم</label>
+                        <span class="input-highlight"></span>
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="email" name="email" id="form-email" required autocomplete="email">
+                        <label for="form-email" id="form-email-label">البريد الإلكتروني</label>
+                        <span class="input-highlight"></span>
+                    </div>
+                </div>
+                <div class="input-wrapper full-width">
+                    <textarea name="message" id="form-message" rows="6" required></textarea>
+                    <label for="form-message" id="form-message-label">رسالتك</label>
+                    <span class="input-highlight"></span>
+                </div>
+                <button type="submit" class="btn btn-primary btn-submit" id="form-submit-btn">
+                    <i class="bx bx-send"></i>
+                    <span>إرسال</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ===== Custom Sections Container ===== -->
+    <div id="custom-sections-container">
+        <!-- Rendered by JS for dashboard-added sections -->
+    </div>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer glass" id="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>Mohamed <span>Hamdy</span></h2>
+                <p id="footer-copyright"></p>
+            </div>
+            <div class="footer-social" id="footer-social">
+                <!-- Rendered by JS -->
+            </div>
+        </div>
+        <button class="scroll-top glass-btn" id="scroll-top" aria-label="Back to top">
+            <i class="bx bx-up-arrow-alt"></i>
+        </button>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
